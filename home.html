@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <head>
-    <title>Melody's Music Room Home</title>
-</head>
-<body>
+ <!--Boostrap's CSS-->
+  <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!--Custom CSS-->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>Calculator</title>
+  <body>
+    <div id="head">
+    <h1>A Simple Calculator for Year 1 kids</h>
+    <p id="intro">press "C" to clear the screen and press "DEL" to delete one number</p>
+    </div>
+    <div id="calculator">
+      <form>
+        <input type = "text" id="display" disabled><br>
+        
+        <input type = "button" value="7" id="keys" onclick="show('7')">
+        <input type = "button" value="8" id="keys" onclick="show('8')">
+        <input type = "button" value="9" id="keys" onclick="show('9')">
+        <input type = "button" value="DEL" id="keys" onclick="delone()">
+        <input type = "button" value="C" id="keys" onclick="show('c')"><br>
 
-<h1>Melody's Music Room</h1>
-<p>Welcome to Melody's music room.  Melody is an experienced piano tutor.  She's been working in the music industry since 2000 and has won many awads for her teaching excellence.</p>
+        <input type = "button" value="4" id="keys" onclick="show('4')">
+        <input type = "button" value="5" id="keys" onclick="show('5')">
+        <input type = "button" value="6" id="keys" onclick="show('6')">
+        <input type = "button" value="*" id="keys" onclick="show('*')">
+        <input type = "button" value="/" id="keys" onclick="show('/')"><br>
 
+        <input type = "button" value="1" id="keys" onclick="show('1')">
+        <input type = "button" value="2" id="keys" onclick="show('2')">
+        <input type = "button" value="3" id="keys" onclick="show('3')">
+        <input type = "button" value="+" id="keys" onclick="show('+')">
+        <input type = "button" value="-" id="keys" onclick="show('-')"><br>
+        
+        <input type = "button" value="0" id="keys" onclick="show('0')">
+        <input type = "button" value="." id="keys" onclick="show('.')">
+        <input type = "button" value="x^2" id="keys" onclick="power(2)">
+        <input type = "button" value="x^3" id="keys" onclick="power(3)">
+        <input type = "button" value="=" id="equal" onclick="result()">
+        </div>
+
+<!--jQuery Script-->
+<!--script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<!--Bootstrap Script-->
+<!--script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script-->
+<script src="./js/basic.js"></script>
 </body>
 <html> 
